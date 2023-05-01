@@ -36,7 +36,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const planetas:NextPage<{data:planets}> = ({data}) => {  
     return (
       <>
-      <div>Total de planetas: {data.allPlanets.planets.length}</div>
+      <div className="title">Planetas</div>
+      <h1 className="pelicula">Total de planetas: {data.allPlanets.planets.length}</h1>
       {data!.allPlanets.planets.map(planet =>       
       <div className="Planeta">
       <div className={planet.population < 6000000 ? "rojo" : planet.population < 4500000000 ? "verde" : "morado"}></div>

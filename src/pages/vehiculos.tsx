@@ -44,11 +44,11 @@ export const getServerSideProps:GetServerSideProps = async({params}) => {
 const Vehiculos:NextPage<{data:Vehicles}> = ({data}) => {
     return (        
         <div>
-            <h1>Vehiculos</h1>
-            <h1>Numero total de vehiculos: {data.allVehicles.vehicles.length}</h1>
-            <div className="Planeta">
+             <div className="title">Vehículos</div>
+            <h1 className="pelicula">Número total de vehiculos: {data.allVehicles.vehicles.length}</h1>
+            <div className="lista">
                 {data.allVehicles.vehicles.map((vehicle) => (
-                    <div>
+                    <div className="pelicula">
                         <div>
                             Nombre: {vehicle.name}
                         </div>

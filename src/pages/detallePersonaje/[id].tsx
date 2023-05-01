@@ -69,10 +69,7 @@ const peliculaDetails:NextPage<{data:personaje}> = ({data}) => {
   return (
     <>
     
-      <main className={styles.main}>
-      <div>
-            Detalles personaje:
-            </div>  
+      <main className='pelicula'>
             <div>
             Nombre: {data.person.name}
             </div>

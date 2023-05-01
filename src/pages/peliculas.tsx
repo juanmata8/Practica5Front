@@ -75,7 +75,9 @@ export const filmNumber = (n:number) => {
 const peliculas:NextPage<{data:pelis}> = ({data}) => { 
    
     return (
-      <div className="pelicula">
+      <div>
+        <div className="title">Peliculas</div>
+<div className="pelicula">
       {/* con el dato que le paso a Pelicula, tengo que hacer la búsqueda de esa */}
       {data!.allFilms.films.map(c => 
       <div>
@@ -91,6 +93,9 @@ const peliculas:NextPage<{data:pelis}> = ({data}) => {
         )}
 
       </div>
+
+      </div>
+      
     )
   }
   
